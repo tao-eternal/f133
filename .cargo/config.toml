@@ -1,0 +1,7 @@
+[target.riscv64gc-unknown-none-elf]
+# linker = "riscv64-unknown-elf-ld"
+rustflags = ["-C", "link-arg=-Tmemory.x", "-C", "link-arg=-Tlink.x"]
+
+[build]
+# Pick ONE of these compilation targets
+target = "riscv64gc-unknown-none-elf" # Riscv64-gc
