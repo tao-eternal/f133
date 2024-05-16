@@ -11,8 +11,8 @@ edition = "2021"
 
 [dependencies]
 # panic-halt = "*" # we have ourselves' panic implemention
-riscv = "*"
-riscv-rt = "*"
+riscv = "0.7"
+riscv-rt = "0.11"
 
 [profile.release]
 codegen-units = 1 # better optimizations
